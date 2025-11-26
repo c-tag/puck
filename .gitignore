@@ -38,4 +38,4 @@ yarn-error.log*
 # webstorm
 .idea
 
-dist
+.yarn
