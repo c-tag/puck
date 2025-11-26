@@ -38,4 +38,7 @@ yarn-error.log*
 # webstorm
 .idea
 
+dist
+measured-puck-*.tgz
+
 .yarn
