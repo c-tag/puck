@@ -48,6 +48,8 @@
   flex-shrink: 0;
   padding: 0;
   transition: color 50ms ease-in;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .SidebarSection-breadcrumbLabel:focus-visible {
@@ -70,17 +72,20 @@
 .SidebarSection-breadcrumbs {
   align-items: center;
   display: flex;
-  gap: 4px;
+  gap: 2px;
+  flex-wrap: wrap;
 }
 
 .SidebarSection-breadcrumb {
   align-items: center;
   display: flex;
-  gap: 4px;
+  gap: 2px;
 }
 
 .SidebarSection-heading {
   padding-inline-end: 16px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .SidebarSection-loadingOverlay {

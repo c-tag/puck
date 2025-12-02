@@ -169,7 +169,7 @@ const HeaderInner = <
           </div>
           <div className={getClassName("title")}>
             <Heading rank="2" size="xs">
-              {headerTitle || rootTitle || "Page"}
+              {headerTitle || rootTitle || "ページ"}
               {headerPath && (
                 <>
                   {" "}

@@ -27,7 +27,7 @@ export const SidebarSection = ({
   isLoading?: boolean | null;
 }) => {
   const setUi = useAppStore((s) => s.setUi);
-  const breadcrumbs = useBreadcrumbs(1);
+  const breadcrumbs = useBreadcrumbs();
 
   return (
     <div
@@ -46,14 +46,12 @@ export const SidebarSection = ({
                   >
                     {breadcrumb.label}
                   </button>
-                  <ChevronRight size={16} />
+                  <ChevronRight size={14} />
                 </div>
               ))
             : null}
           <div className={getClassName("heading")}>
-            <Heading rank="2" size="xs">
-              {title}
-            </Heading>
+            <span>{title}</span>
           </div>
         </div>
       </div>
