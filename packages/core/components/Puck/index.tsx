@@ -550,10 +550,10 @@ function PuckLayout<
                     onResize={setLeftWidth}
                     onResizeEnd={handleLeftSidebarResizeEnd}
                   >
-                    <SidebarSection title="Components" noBorderTop>
+                    <SidebarSection title="パーツ" noBorderTop>
                       <Components />
                     </SidebarSection>
-                    <SidebarSection title="Outline">
+                    <SidebarSection title="アウトライン">
                       <Outline />
                     </SidebarSection>
                   </Sidebar>

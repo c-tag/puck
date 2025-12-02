@@ -3,9 +3,9 @@ import { useAppStore, useAppStoreApi } from "../../../../store";
 import {
   ChevronDown,
   ChevronUp,
-  Globe,
   PanelLeft,
   PanelRight,
+  Save,
 } from "lucide-react";
 import { Heading } from "../../../Heading";
 import { IconButton } from "../../../IconButton/IconButton";
@@ -131,9 +131,9 @@ const HeaderInner = <
                 const data = appStore.getState().state.data;
                 onPublish && onPublish(data as G["UserData"]);
               }}
-              icon={<Globe size="14px" />}
+              icon={<Save size="14px" />}
             >
-              Publish
+              保存
             </Button>
           </CustomHeaderActions>
         </>
@@ -206,9 +206,9 @@ const HeaderInner = <
                         .data as G["UserData"];
                       onPublish && onPublish(data);
                     }}
-                    icon={<Globe size="14px" />}
+                    icon={<Save size="14px" />}
                   >
-                    Publish
+                    保存
                   </Button>
                 </CustomHeaderActions>
               )}
