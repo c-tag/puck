@@ -92,7 +92,7 @@ export const ViewportControls = ({
           : [
               {
                 value: autoZoom,
-                label: `${(autoZoom * 100).toFixed(0)}% (Auto)`,
+                label: `${(autoZoom * 100).toFixed(0)}% (自動)`,
               },
             ]),
       ]
@@ -108,11 +108,7 @@ export const ViewportControls = ({
           key={i}
           height={viewport.height}
           width={viewport.width}
-          title={
-            viewport.label
-              ? `Switch to ${viewport.label} viewport`
-              : "Switch viewport"
-          }
+          title={viewport.label ? `${viewport.label}表示` : "表示切り替え"}
           onClick={onViewportChange}
         >
           {typeof viewport.icon === "string"
@@ -123,7 +119,7 @@ export const ViewportControls = ({
       <div className={getClassName("divider")} />
       <IconButton
         type="button"
-        title="Zoom viewport out"
+        title="縮小"
         disabled={zoom <= zoomOptions[0]?.value}
         onClick={(e) => {
           e.stopPropagation();
@@ -141,7 +137,7 @@ export const ViewportControls = ({
       </IconButton>
       <IconButton
         type="button"
-        title="Zoom viewport in"
+        title="拡大"
         disabled={zoom >= zoomOptions[zoomOptions.length - 1]?.value}
         onClick={(e) => {
           e.stopPropagation();

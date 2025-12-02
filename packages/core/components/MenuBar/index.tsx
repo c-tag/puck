@@ -48,7 +48,7 @@ export function MenuBar<UserData extends Data>({
         <div className={getClassName("history")}>
           <IconButton
             type="button"
-            title="undo"
+            title="元に戻す"
             disabled={!hasPast}
             onClick={back}
           >
@@ -56,7 +56,7 @@ export function MenuBar<UserData extends Data>({
           </IconButton>
           <IconButton
             type="button"
-            title="redo"
+            title="やり直す"
             disabled={!hasFuture}
             onClick={forward}
           >

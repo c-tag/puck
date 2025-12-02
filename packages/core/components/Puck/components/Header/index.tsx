@@ -150,7 +150,7 @@ const HeaderInner = <
                 onClick={() => {
                   toggleSidebars("left");
                 }}
-                title="Toggle left sidebar"
+                title="左サイドバーを表示/非表示"
               >
                 <PanelLeft focusable="false" />
               </IconButton>
@@ -161,7 +161,7 @@ const HeaderInner = <
                 onClick={() => {
                   toggleSidebars("right");
                 }}
-                title="Toggle right sidebar"
+                title="右サイドバーを表示/非表示"
               >
                 <PanelRight focusable="false" />
               </IconButton>
