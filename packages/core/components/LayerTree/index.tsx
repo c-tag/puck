@@ -193,18 +193,7 @@ export const LayerTree = ({
 
   return (
     <>
-      {label && (
-        <div className={getClassName("zoneTitle")}>
-          <div className={getClassName("zoneIcon")}>
-            <Layers size="16" />
-          </div>
-          {label}
-        </div>
-      )}
       <ul className={getClassName()}>
-        {contentIds.length === 0 && (
-          <div className={getClassName("helper")}>No items</div>
-        )}
         {contentIds.map((itemId, i) => {
           return (
             <Layer
